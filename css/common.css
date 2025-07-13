@@ -62,6 +62,29 @@ body {
 }
 
 /* TASK 2*/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+.gallery li {
+  width: 360px;
+  height: 300px;
+  flex: 0 0 calc((100% - 48px) / 3);
+  list-style: none;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.gallery li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
 /* TASK 3*/
 
@@ -129,6 +152,10 @@ body {
   height: 40px;
   margin-top: 8px;
 }
+.but-size-four:hover {
+  background: #6c8cff;
+  border: solid #6c8cff;
+}
 
 /* TASK 5*/
 .widget {
@@ -144,9 +171,12 @@ body {
   letter-spacing: 0.04em;
   color: #2e2f42;
 }
-.color {
-}
+
 .but-size-five {
   width: 148px;
   height: 40px;
+}
+.but-size-five:hover {
+  background: #6c8cff;
+  border: solid #6c8cff;
 }
